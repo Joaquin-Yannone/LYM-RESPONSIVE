@@ -252,7 +252,7 @@ function mostrarProductos() {
             <h3>${producto.descripcion}</h3>
             <h2>$${producto.precio}</h2>
             <div class="cant-comprar">
-                <input type="number" id="cantidad" placeholder="Cantidad" min="1">
+                <input type="text" id="cantidad" placeholder="Cantidad" min="1">
                 <button class="comprar-btn">Comprar</button>
             </div>
         </div>`;
