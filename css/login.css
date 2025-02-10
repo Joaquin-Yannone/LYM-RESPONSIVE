@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", system-ui;
+    text-decoration: none;
+}
+
+body {
+    background-color: #222D38;
+}
+
+.LogoImg img {
+    width: 130px;
+    height: 130px;
+}
+
+.LoginMov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-animation: bounce-in-top 1.1s both;
+    animation: bounce-in-top 1.1s both;
+}
+
+.LoginConteiner {
+    border-radius: 20px;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.InputConteiner {
+    margin-top: 30px;
+}
+
+.InputCotizar {
+    position: relative;
+}
+
+.InputCotizar input {
+    border: 2px solid #343F4A;
+    width: 340px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+
+.InputCotizar input:focus {
+    border: 2px solid #343F4A;
+    transition: all 0.3s ease;
+}
+
+.InputCotizar label {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #2F2E2E;
+}
+
+.InputCotizar :focus~label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+
+.InputCotizar input:not(:placeholder-shown)~label {
+    top: 0;
+    left: 15px;
+    font-size: 14px;
+    padding: 0 2px;
+    background: #ffffff;
+    color: black;
+}
+
+.BtnLogin button {
+    width: 340px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #222D38;
+}
+
+.BtnLogin button:hover {
+    transition: all 1s ease;
+    background-color: #343F4A;
+}
+
+@keyframes LoginMov {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@media (max-width: 430px) {
+    .LogoImg img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .LoginConteiner {
+        width: 350px;
+        height: 300px;
+    }
+
+    .InputCotizar input {
+        width: 300px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .InputConteiner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .BtnLogin button {
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    .LogoImg img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .LoginConteiner {
+        width: 300px;
+        height: 280px;
+    }
+
+    .InputCotizar input {
+        width: 270px;
+        padding: 8px;
+    }
+
+    .InputConteiner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .BtnLogin button {
+        width: 270px;
+    }
+}

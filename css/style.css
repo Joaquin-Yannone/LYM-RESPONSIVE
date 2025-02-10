@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", system-ui;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222D38;
+    padding: 10px 20px;
+    position: relative;
+    height: 90px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-container img {
+    margin-top: 5px;
+    width: 120px;
+    height: 80px;
+}
+
+.Cart {
+    margin-left: auto;
+}
+
+.Cart a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.NavbarConteiner {
+    height: 60px;
+    background-color: #343F4A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.Inputnav input {
+    width: 500px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 12px
+}
+
+.carousel {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-button {
+    background-color: #343f4a94;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-button:hover {
+    background-color: #343F4A;
+}
+
+.splide {
+    width: 80%;
+    max-width: 900px;
+}
+
+.splide {
+    width: 90%;
+    max-width: 900px;
+    min-width: 280px; /* No se hace más pequeño que una tarjeta */
+    margin: auto;
+}
+
+
+/* Estilos personalizados */
+
+.SplideConteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.primera-card {
+    width: 280px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #343F4A;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.primera-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.primera-card h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.CategoriaConteiner {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.padding-top {
+    padding-top: 70px;
+}
+
+.nuestros-productos {
+    background-color: #343F4A;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.nuestros-productos h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #f4f4f4;
+}
+
+.contenedor-carrusel {
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.pista-carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.diapositiva-carrusel {
+    min-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.controles-carrusel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.boton-carrusel {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton-carrusel:hover {
+    background: #555;
+}
+
+.SeccionCard {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.CardConteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    /* 3 columnas */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos de la tarjeta */
+.segunda-card {
+    width: 450px;
+    height: auto; /* Cambiar a auto para que la altura se ajuste según el contenido */
+    border-radius: 20px;
+    background-color: #343F4A;
+    padding-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Swiper container */
+.swiper {
+    width: 100%;
+    height: 250px;
+}
+
+/* Cuando no hay carrusel, ocultamos la caja del swiper */
+.imagen-unica {
+    width: 100%;
+    height: 250px; /* Ajusta la altura para que no se rompa la card */
+    overflow: hidden;
+}
+
+.swiper-slide img,
+.imagen-unica img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Estilos de texto dentro de la tarjeta */
+.segunda-card h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.segunda-card h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.cant-comprar {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    gap: 50px;
+}
+
+.cant-comprar input {
+    width: 135px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+.cant-comprar button {
+    width: 135px;
+    height: 45px;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos de Swiper */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar controles solo cuando pasas el mouse */
+.segunda-card:hover .swiper-button-next,
+.segunda-card:hover .swiper-button-prev,
+.segunda-card:hover .swiper-pagination {
+    opacity: 1;
+}
+
+/* Cambiar color de las flechas */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #343F4A;
+    /* Color de las flechas */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Cambiar color de la paginación */
+.swiper-pagination-bullet {
+    background: white;
+    /* Color de los puntos inactivos */
+}
+
+.swiper-pagination-bullet-active {
+    background: #343F4A !important;
+    /* Color del punto activo */
+}
+
+.footer {
+    background-color: #222D38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 900px;
+    width: 100%;
+    height: 250px;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.flex-footer h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.BtnVermas{
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #343F4A;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    -webkit-box-shadow: 2px 3px 7px -1px rgba(133,133,133,1);
+    -moz-box-shadow: 2px 3px 7px -1px rgba(133,133,133,1);
+    box-shadow: 2px 3px 7px -1px rgba(133,133,133,1);
+    cursor: pointer;
+}
+
+.BtnVermas:hover{
+    background-color: #495968;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+.mensaje-no-encontrado {
+    font-size: 20px;
+    color: #343F4A;
+    margin-top: 20px;
+}
+
+.centrar-tabla{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+.container-tabla{
+    width: 92%;
+    height: 500px;
+    background-color: #222D38;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #222D38;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+td{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+tbody tr {
+    border-bottom: 1px solid #343F4A;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #222D38;
+}
+
+tbody tr:hover {
+    background-color: #343F4A;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.eliminar {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+}
+
+.eliminar:hover{
+    background-color: #f3464a;
+}
+
+.total {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.comprar-catalogo button{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #343F4A;
+    border-radius: 10px;
+}
+
+.comprar-catalogo{
+    display: flex;
+    justify-content: right;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    gap: 40px;
+}
+.cantidad-container {
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+    text-align: center;
+}
+
+.cantidad-container span {
+    min-width: 1px; /* Asegura que el número de cantidad se mantenga alineado */
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-cantidad {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-cantidad:hover {
+    background-color: #f0f0f0;
+}
+/* Estilos responsive */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}

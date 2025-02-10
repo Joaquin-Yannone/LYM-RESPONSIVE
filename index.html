@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-container">
+                <img src="./assets/Login/LOGO FOOTER.png" alt="Logo">
+            </div>
+            <div class="Cart">
+                <a href="./Pages/pedidos.html">Ver pedido</a>
+            </div>
+        </div>
+        <nav class="NavbarConteiner">
+            <div>
+                <ul class="navbar">
+                    <li><a href="">Tecnologia</a></li>
+                    <li><a href="">Electrodomesticos</a></li>
+                    <li><a href="">Herramientas</a></li>
+                </ul>
+            </div>
+            <div class="Inputnav">
+                <input id="Busqueda" type="search" placeholder="Buscar...">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="./assets/Carrusel/carrusel.webp" alt="Slide 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/Carrusel/carrusel2.png" alt="Slide 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/Carrusel/carrusel3.png" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-button" id="prev">❮</button>
+                    <button class="carousel-button" id="next">❯</button>
+                </div>
+            </div>
+        </section>
+        <section class="SplideConteiner">
+            <div class="splide" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>1</h2>
+                                </div>
+                            </a> <!-- Cierre correcto de la etiqueta -->
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>2</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>3</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>4</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>5</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>6</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>7</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>8</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="primera-card">
+                                    <img src="./assets/Categorias/Imgcategoria.png" alt="Reemplazar imagen">
+                                    <h2>9</h2>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="padding-top">
+                <div class="nuestros-productos">
+                    <h2>NUESTROS PRODUCTOS!</h2>
+                </div>
+            </div>
+        </section>
+        <section class="SeccionCard">
+            <div id="ContenedorCard" class="CardConteiner">
+
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./Js/carrusel.js"></script>
+    <script src="./Js/Card.js"></script>
+    <script src="./Js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</body>
+</html>
